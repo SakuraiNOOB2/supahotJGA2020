@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0C327BE4-4C80-FA1B-9CB2-604DA07CC061}</ProjectGuid>
+    <ProjectGuid>{BFCA743A-922B-1ED1-98F3-063C2137BA0F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -91,9 +91,13 @@
      <Compile Include="Assets\Script\BrokenFloor.cs" />
      <Compile Include="Assets\Script\ItemNumController.cs" />
      <Compile Include="Assets\Script\Player.cs" />
+     <Compile Include="Assets\Script\TestScript.cs" />
      <Compile Include="Assets\Script\camera.cs" />
      <Compile Include="Assets\Script\freez.cs" />
      <Compile Include="Assets\Script\item.cs" />
+     <Compile Include="Assets\Script\messagecollider\messagecollider.cs" />
+     <Compile Include="Assets\Script\messagecollider\messagecollider2.cs" />
+     <Compile Include="Assets\Script\messagecollider\messagecollider3.cs" />
      <Compile Include="Assets\Script\parabola.cs" />
      <None Include="Assets\NVIDIA\Flex\Resources\Shaders\FlexDrawFluid.shader" />
      <None Include="Assets\NVIDIA\Flex\Resources\Shaders\FlexDrawFluid2.shader" />
@@ -112,43 +116,43 @@
      <None Include="Assets\NVIDIA\Flex\Resources\Shaders\SurfaceShader.shader" />
      <None Include="Assets\NVIDIA\Flex\Resources\Shaders\FlexPrepareFluid.shader" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/yuki/Documents/Unity File/GameAwards_pro/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/yuki/Documents/GitHub/supahotJGA2020/GameAwards/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/yuki/Documents/Unity File/GameAwards_pro/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/yuki/Documents/GitHub/supahotJGA2020/GameAwards/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder">
- <HintPath>C:/Users/yuki/Documents/Unity File/GameAwards_pro/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+ <HintPath>C:/Users/yuki/Documents/GitHub/supahotJGA2020/GameAwards/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.Editor">
- <HintPath>C:/Users/yuki/Documents/Unity File/GameAwards_pro/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+ <HintPath>C:/Users/yuki/Documents/GitHub/supahotJGA2020/GameAwards/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
- <HintPath>C:/Users/yuki/Documents/Unity File/GameAwards_pro/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+ <HintPath>C:/Users/yuki/Documents/GitHub/supahotJGA2020/GameAwards/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/yuki/Documents/Unity File/GameAwards_pro/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/yuki/Documents/GitHub/supahotJGA2020/GameAwards/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/yuki/Documents/Unity File/GameAwards_pro/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/yuki/Documents/GitHub/supahotJGA2020/GameAwards/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/yuki/Documents/Unity File/GameAwards_pro/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/yuki/Documents/GitHub/supahotJGA2020/GameAwards/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/yuki/Documents/Unity File/GameAwards_pro/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/yuki/Documents/GitHub/supahotJGA2020/GameAwards/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/yuki/Documents/Unity File/GameAwards_pro/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/yuki/Documents/GitHub/supahotJGA2020/GameAwards/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.AddOns.Editor">
- <HintPath>C:/Users/yuki/Documents/Unity File/GameAwards_pro/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+ <HintPath>C:/Users/yuki/Documents/GitHub/supahotJGA2020/GameAwards/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/yuki/Documents/Unity File/GameAwards_pro/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/yuki/Documents/GitHub/supahotJGA2020/GameAwards/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/yuki/Documents/Unity File/GameAwards_pro/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/yuki/Documents/GitHub/supahotJGA2020/GameAwards/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -684,7 +688,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{113BFF06-42E3-B928-DC73-9C5333F37084}</Project>
+      <Project>{1E849A92-DDE4-FD60-FB0C-F78B0A50808D}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>

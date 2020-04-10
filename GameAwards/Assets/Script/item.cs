@@ -19,10 +19,13 @@ public class item : MonoBehaviour
         //回転させる
         transform.Rotate(new Vector3(0, 1, 0));
     }
-    void OnTriggerEnter(Collider Player)
+    void OnTriggerEnter(Collider other)
     {
-        Debug.Log("ぶつかった");
-        inc.GetComponent<ItemNumController>().AddItemNum(1);
-        gameObject.SetActive(false);
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("ぶつかった");
+            inc.GetComponent<ItemNumController>().AddItemNum(1);
+            gameObject.SetActive(false);
+        }
     }
 }
