@@ -89,6 +89,7 @@
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
      <Compile Include="Assets\Script\BrokenFloor.cs" />
+     <Compile Include="Assets\Script\Goal.cs" />
      <Compile Include="Assets\Script\ItemNumController.cs" />
      <Compile Include="Assets\Script\Player.cs" />
      <Compile Include="Assets\Script\PlayerControll.cs" />
