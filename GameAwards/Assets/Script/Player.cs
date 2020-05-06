@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     static float speed = 0.1f;
 
     public GameObject inc;
+    public GameObject ol;
 
     // bullet prefab
     public GameObject concrete;
@@ -37,7 +38,7 @@ public class Player : MonoBehaviour
 
         count++;
         //スペースを押したら
-        if (Input.GetKeyDown(KeyCode.Z) && (inc.GetComponent<ItemNumController>().GetMode() == 1))
+        if (Input.GetKeyDown(KeyCode.Z) && (inc.GetComponent<ItemNumController>().GetMode() == 1) && (ol.GetComponent<overlap>().IsNotOverlap()==true))
         {
 
             count = 0;
