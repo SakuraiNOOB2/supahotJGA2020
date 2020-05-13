@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -788,7 +788,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14754
+  m_Name: pb_Mesh34442
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1451,6 +1451,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 789021944}
+  - component: {fileID: 789021945}
   m_Layer: 0
   m_Name: muzzle
   m_TagString: Untagged
@@ -1472,6 +1473,18 @@ Transform:
   m_Father: {fileID: 1740565065}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &789021945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789021943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdd7dc30f29b9f4193c08ed2d4b59c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &811112180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1786,7 +1799,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14950
+  m_Name: pb_Mesh34628
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1994,7 +2007,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14794
+  m_Name: pb_Mesh-40864
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2157,7 +2170,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14782
+  m_Name: pb_Mesh34470
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2872,7 +2885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inc: {fileID: 1262560382}
-  ol: {fileID: 0}
+  ol: {fileID: 789021943}
   concrete: {fileID: 2092474551034878777, guid: 773c13354641a4d4696aaa26574d62f1,
     type: 3}
   concrete2: {fileID: 2393555837490024194, guid: 2c0b2b4a37ee4404ebae507db660ec9b,
