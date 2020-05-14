@@ -104,7 +104,9 @@
     <Compile Include="Assets\Script\PlayerControll.cs" />
     <Compile Include="Assets\Script\Player_MoveBlock.cs" />
     <Compile Include="Assets\Script\Rift.cs" />
-    <Compile Include="Assets\Script\TestScript.cs" />
+    <Compile Include="Assets\Script\TenVin.cs" />
+    <Compile Include="Assets\Script\TenVinChild.cs" />
+    <Compile Include="Assets\Script\TimerScript.cs" />
     <Compile Include="Assets\Script\camera.cs" />
     <Compile Include="Assets\Script\freez.cs" />
     <Compile Include="Assets\Script\item.cs" />

@@ -12,7 +12,7 @@ public class PlayerControll : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-	jumpflag =false;
+	    jumpflag =false;
     }
 
     // Update is called once per frame
@@ -39,8 +39,8 @@ public class PlayerControll : MonoBehaviour
         {
 	    if(jumpflag ==false)
 		{
-            	rb.AddForce(0,400,0);
-		jumpflag =true;
+            rb.AddForce(0,400,0);
+		    jumpflag =true;
 		}
         }
         transform.position = Pos;
@@ -51,7 +51,7 @@ public class PlayerControll : MonoBehaviour
     {
         if(speed.y <= 1.0f)
         {
-               jumpflag = false;
+            jumpflag = false;
         }
     }
 }
