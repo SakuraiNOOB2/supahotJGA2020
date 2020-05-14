@@ -43,7 +43,6 @@ public class TenVinChild : MonoBehaviour
             PosPos.y += 0.1f;
             TenVinVin.transform.position = PosPos;
 
-            if(Lefty ==true)
             if(Lefty == true)
             {
                 OyaVinVin.Left();
