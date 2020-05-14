@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;using UnityEngine.SceneManagement;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
@@ -14,12 +15,14 @@ public class GameOver : MonoBehaviour
     void Update()
     {
         
-    }    void OnCollisionEnter(Collision collision)
+    }
+    void OnCollisionEnter(Collision collision)
     {
           if(collision.gameObject.name == "ThirdPersonController")
           {
           SceneManager.LoadScene("StageSelect");
           }
+        Destroy(collision.gameObject);
     }
 
 }
