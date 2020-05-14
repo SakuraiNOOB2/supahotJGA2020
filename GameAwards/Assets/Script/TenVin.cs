@@ -14,7 +14,6 @@ public class TenVin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Baranse);
     }
 
     public void Left()

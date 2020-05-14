@@ -33,7 +33,7 @@ public class TenVinChild : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        if (Baranse >= 0)
+        if (Baranse >= 0 && Baranse < 100)
         {
             Vector3 Pos = transform.position;
             Pos.y -= 0.1f;
@@ -44,6 +44,7 @@ public class TenVinChild : MonoBehaviour
             TenVinVin.transform.position = PosPos;
 
             if(Lefty ==true)
+            if(Lefty == true)
             {
                 OyaVinVin.Left();
             }
