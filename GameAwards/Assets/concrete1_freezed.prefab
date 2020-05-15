@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6545496538613456781}
   - component: {fileID: 2520176461412410801}
   - component: {fileID: -8020541996491111505}
+  - component: {fileID: -8540610657434598131}
   m_Layer: 0
   m_Name: concrete1_freezed
   m_TagString: concrete
@@ -110,3 +111,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!114 &-8540610657434598131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3547603532589685239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0df211c497250c40ace238625ba9161, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
