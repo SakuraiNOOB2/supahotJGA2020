@@ -18,6 +18,9 @@ public class Goal : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-      	SceneManager.LoadScene ("StageSelect");    
+        if (collision.gameObject.name == "ThirdPersonController")
+        {
+            SceneManager.LoadScene("StageSelect");
+        }
     }
 }
