@@ -100,6 +100,7 @@
     <Compile Include="Assets\Script\GameOver.cs" />
     <Compile Include="Assets\Script\Goal.cs" />
     <Compile Include="Assets\Script\ItemNumController.cs" />
+    <Compile Include="Assets\Script\NewPlayerControl.cs" />
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\PlayerControll.cs" />
     <Compile Include="Assets\Script\Player_MoveBlock.cs" />

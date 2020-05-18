@@ -35,45 +35,50 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector3 force;
 
         count++;
         //スペースを押したら
-        if (Input.GetKeyDown(KeyCode.Z) && (inc.GetComponent<ItemNumController>().GetMode() == 1) && (ol.GetComponent<overlap>().IsNotOverlap()==true))
+        if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("joystick button 1"))
         {
+            switch(inc.GetComponent<ItemNumController>().GetMode())
+            {
+                //ブロック状のコンクリート
+                case 1:
+                    if(ol.GetComponent<overlap>().IsNotOverlap() == true)
+                    {
+                        count = 0;
+                        // 弾丸の複製
+                        GameObject concretes = Instantiate(concrete) as GameObject;
 
-            count = 0;
-            // 弾丸の複製
-            GameObject concretes = Instantiate(concrete) as GameObject;
+                       
 
-            Vector3 force;
+                        force = this.gameObject.transform.forward * concrete_speed;
 
-            force = this.gameObject.transform.forward * concrete_speed;
+                        // Rigidbodyに力を加えて発射
+                        concretes.GetComponent<Rigidbody>().AddForce(force);
 
-            // Rigidbodyに力を加えて発射
-            concretes.GetComponent<Rigidbody>().AddForce(force);
+                        // 弾丸の位置を調整
+                        concretes.transform.position = muzzle.position;
+                    }
+                    break;
 
-            // 弾丸の位置を調整
-            concretes.transform.position = muzzle.position;
+                //平たいやつ
+                case 2:
+                    count = 0;
+                    // 弾丸の複製
+                    GameObject concrete2s = Instantiate(concrete2) as GameObject;
 
-        }
+                    force = this.gameObject.transform.forward * concrete_speed;
 
-        //スペースを押したら
-        if (Input.GetKeyDown(KeyCode.Z) && inc.GetComponent<ItemNumController>().GetMode() == 2)
-        {
+                    // Rigidbodyに力を加えて発射
+                    //concrete2s.GetComponent<Rigidbody>().AddForce(force);
 
-            count = 0;
-            // 弾丸の複製
-            GameObject concrete2s = Instantiate(concrete2) as GameObject;
-
-            Vector3 force;
-
-            force = this.gameObject.transform.forward * concrete_speed;
-
-            // Rigidbodyに力を加えて発射
-            //concrete2s.GetComponent<Rigidbody>().AddForce(force);
-
-            // 弾丸の位置を調整
-            concrete2s.transform.position = muzzle2.position;
+                    // 弾丸の位置を調整
+                    concrete2s.transform.position = muzzle2.position;
+                    break;
+            }
+           
 
         }
 
