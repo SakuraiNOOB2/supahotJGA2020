@@ -111,6 +111,7 @@
     <Compile Include="Assets\Script\TimerScript.cs" />
     <Compile Include="Assets\Script\UI_Display.cs" />
     <Compile Include="Assets\Script\camera.cs" />
+    <Compile Include="Assets\Script\cursor.cs" />
     <Compile Include="Assets\Script\freez.cs" />
     <Compile Include="Assets\Script\item.cs" />
     <Compile Include="Assets\Script\level3\block_move.cs" />
