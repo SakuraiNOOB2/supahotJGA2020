@@ -22,20 +22,21 @@ public class PlayerControll : MonoBehaviour
         Vector3 Pos = transform.position;
         Vector3 Rot = this.gameObject.transform.localEulerAngles;
         speed = rb.velocity;
+        float dph = Input.GetAxis("D_Pad_H");
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || dph < -0.5f )
         {
             Rot.y = -90;
             Pos.x -= 0.05f;
         }
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) || dph > 0.5f)
         {
             Rot.y = 90;
             Pos.x += 0.05f;
         }
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown("joystick button 0"))
         {
 	    if(jumpflag ==false)
 		{
