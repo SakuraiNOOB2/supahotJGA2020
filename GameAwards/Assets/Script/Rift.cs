@@ -18,4 +18,14 @@ public class Rift : MonoBehaviour
     {
         transform.Rotate(new Vector3(0, 0, Rotato));
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        collision.gameObject.transform.parent = this.gameObject.transform;
+    }
+
+    void OnCollisionExit(Collision collision)
+    {
+        collision.transform.parent = null;
+    }
 }
