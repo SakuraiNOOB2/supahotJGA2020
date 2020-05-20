@@ -7,12 +7,14 @@ public class PlayerControll : MonoBehaviour
     float jump;      //ジャンプの強さ
     private Vector3 speed;
     private bool jumpflag;
+    private bool breakfrag;
     public Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
 	    jumpflag =false;
+        breakfrag = false;
     }
 
     // Update is called once per frame
@@ -44,6 +46,16 @@ public class PlayerControll : MonoBehaviour
 		    jumpflag =true;
 		}
         }
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            breakfrag = true;
+        }
+
+        if(Input.GetKeyUp(KeyCode.X))
+        {
+            breakfrag = false;
+        }
         transform.position = Pos;
         transform.eulerAngles = Rot;
     }
@@ -53,6 +65,13 @@ public class PlayerControll : MonoBehaviour
         if(speed.y <= 1.0f)
         {
             jumpflag = false;
+        }
+        if (breakfrag ==true)
+        {
+            if (collision.gameObject.name == ("concrete1_freezed(Clone)"))
+            {
+                Destroy(collision.gameObject);
+            }
         }
     }
 }
