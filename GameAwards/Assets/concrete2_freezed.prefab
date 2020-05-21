@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6067199010102654253}
   m_Layer: 0
   m_Name: concrete2_freezed
-  m_TagString: Untagged
+  m_TagString: concrete
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

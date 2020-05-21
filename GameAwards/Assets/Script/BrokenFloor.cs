@@ -21,7 +21,7 @@ public class BrokenFloor : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" || other.gameObject.tag == "concrete")
         {
             StartCoroutine("DestroyTime");
         }
