@@ -101,11 +101,12 @@
     <Compile Include="Assets\Script\Goal.cs" />
     <Compile Include="Assets\Script\ItemNumController.cs" />
     <Compile Include="Assets\Script\NewPlayerControl.cs" />
-    <Compile Include="Assets\Script\Player.cs" />
-    <Compile Include="Assets\Script\PlayerControll.cs" />
+    <Compile Include="Assets\Script\Player\Player.cs" />
+    <Compile Include="Assets\Script\Player\PlayerControll.cs" />
     <Compile Include="Assets\Script\Player_MoveBlock.cs" />
     <Compile Include="Assets\Script\Rift.cs" />
     <Compile Include="Assets\Script\Stage_Select.cs" />
+    <Compile Include="Assets\Script\Stage_Select_Block.cs" />
     <Compile Include="Assets\Script\TenVin.cs" />
     <Compile Include="Assets\Script\TenVinChild.cs" />
     <Compile Include="Assets\Script\TimerScript.cs" />
