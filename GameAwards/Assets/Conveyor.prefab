@@ -108,5 +108,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOn: 1
   DriveSpeed: 3
-  DriveDirection: {x: 0, y: 0, z: 1}
+  DriveDirection: {x: 1, y: 0, z: 0}
   forcePower: 50
