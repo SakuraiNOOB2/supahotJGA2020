@@ -6,7 +6,8 @@ public class item : MonoBehaviour
 {
     private GameObject Player;
     public GameObject inc; // エディターから取得できるようにpublicにしておく
-
+    public int Num;
+    public int type;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,12 @@ public class item : MonoBehaviour
         {
             Debug.Log("ぶつかった");
             inc.GetComponent<ItemNumController>().AddItemNum(1);
+            //アイテムのタイプで個数識別
+            if(type == 1)
+                other.gameObject.GetComponent<Player>().AddItem(Num);
+            if(type ==2)
+                other.gameObject.GetComponent<Player>().AddItemFlat(Num);
+
             gameObject.SetActive(false);
         }
     }

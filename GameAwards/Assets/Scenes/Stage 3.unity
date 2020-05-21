@@ -2968,6 +2968,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inc: {fileID: 1262560382}
+  Num: 3
+  type: 1
 --- !u!135 &1131622639
 SphereCollider:
   m_ObjectHideFlags: 0

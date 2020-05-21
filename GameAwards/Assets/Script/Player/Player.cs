@@ -23,13 +23,18 @@ public class Player : MonoBehaviour
 
     private int count = 0;
 
+    //アイテム個数
+    private int ItemNum;
+    private int ItemNumflat;
+
     private Vector3 moveDirection;
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        ItemNum = 0;
+        ItemNumflat = 0;
     }
 
     // Update is called once per frame
@@ -41,17 +46,18 @@ public class Player : MonoBehaviour
         //スペースを押したら
         if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("joystick button 1"))
         {
-            switch(inc.GetComponent<ItemNumController>().GetMode())
+            switch (inc.GetComponent<ItemNumController>().GetMode())
             {
                 //ブロック状のコンクリート
                 case 1:
-                    if(ol.GetComponent<overlap>().IsNotOverlap() == true)
+                    if (ol.GetComponent<overlap>().IsNotOverlap() == true && ItemNum != 0)
                     {
                         count = 0;
+                        ItemNum--;
                         // 弾丸の複製
                         GameObject concretes = Instantiate(concrete) as GameObject;
 
-                       
+
 
                         force = this.gameObject.transform.forward * concrete_speed;
 
@@ -65,21 +71,23 @@ public class Player : MonoBehaviour
 
                 //平たいやつ
                 case 2:
-                    count = 0;
-                    // 弾丸の複製
-                    GameObject concrete2s = Instantiate(concrete2) as GameObject;
+                    if (ItemNumflat !=0)
+                    {
+                        count = 0;
+                        ItemNumflat--;
+                        // 弾丸の複製
+                        GameObject concrete2s = Instantiate(concrete2) as GameObject;
 
-                    force = this.gameObject.transform.forward * concrete_speed;
+                        force = this.gameObject.transform.forward * concrete_speed;
 
-                    // Rigidbodyに力を加えて発射
-                    //concrete2s.GetComponent<Rigidbody>().AddForce(force);
+                        // Rigidbodyに力を加えて発射
+                        //concrete2s.GetComponent<Rigidbody>().AddForce(force);
 
-                    // 弾丸の位置を調整
-                    concrete2s.transform.position = muzzle2.position;
+                        // 弾丸の位置を調整
+                        concrete2s.transform.position = muzzle2.position;
+                    }
                     break;
             }
-           
-
         }
 
         //スペースを押したら
@@ -121,6 +129,15 @@ public class Player : MonoBehaviour
 
 
         //}
+    }
+
+    public void AddItem(int Add)
+    {
+        ItemNum += Add;
+    }
+    public void AddItemFlat(int Add)
+    {
+        ItemNumflat += Add;
     }
 }
 
