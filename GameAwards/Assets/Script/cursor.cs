@@ -18,9 +18,20 @@ public class cursor : MonoBehaviour
         float dph = Input.GetAxis("D_Pad_H");
         Vector3 Pos = transform.position;
 
-        Pos.x = Pos.x + dph / 100;
-        Pos.y = Pos.y + dpv / 100;
+        Pos.x = Pos.x + dph * 5;
+        Pos.y = Pos.y + dpv * 5;
 
         transform.position = Pos;
+
+        if (Input.GetKeyDown("joystick button 0"))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Pos);
+            RaycastHit hit = new RaycastHit();
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                SceneManager.LoadScene(hit.collider.gameObject.name);
+            }
+        }
     }
 }
