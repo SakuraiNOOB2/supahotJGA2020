@@ -21,8 +21,6 @@ public class Player : MonoBehaviour
     // 弾丸の速度
     public float concrete_speed = 1000;
 
-    private int count = 0;
-
     //アイテム個数
     private int ItemNum;
     private int ItemNumflat;
@@ -41,8 +39,6 @@ public class Player : MonoBehaviour
     void Update()
     {
         Vector3 force;
-
-        count++;
         //スペースを押したら
         if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("joystick button 1"))
         {
@@ -50,14 +46,11 @@ public class Player : MonoBehaviour
             {
                 //ブロック状のコンクリート
                 case 1:
-                    if (ol.GetComponent<overlap>().IsNotOverlap() == true && ItemNum != 0)
+                    if (ItemNum != 0)
                     {
-                        count = 0;
                         ItemNum--;
                         // 弾丸の複製
                         GameObject concretes = Instantiate(concrete) as GameObject;
-
-
 
                         force = this.gameObject.transform.forward * concrete_speed;
 
@@ -73,7 +66,6 @@ public class Player : MonoBehaviour
                 case 2:
                     if (ItemNumflat !=0)
                     {
-                        count = 0;
                         ItemNumflat--;
                         // 弾丸の複製
                         GameObject concrete2s = Instantiate(concrete2) as GameObject;
