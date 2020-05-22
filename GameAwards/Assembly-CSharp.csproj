@@ -89,6 +89,7 @@
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
      <Compile Include="Assets\Script\BrokenFloor.cs" />
+     <Compile Include="Assets\Script\CameraControll.cs" />
      <Compile Include="Assets\Script\Conveyor.cs" />
      <Compile Include="Assets\Script\GameOver.cs" />
      <Compile Include="Assets\Script\Goal.cs" />
@@ -114,6 +115,7 @@
      <Compile Include="Assets\Script\messagecollider\messagecollider3.cs" />
      <Compile Include="Assets\Script\overlap.cs" />
      <Compile Include="Assets\Script\parabola.cs" />
+     <Compile Include="Assets\Script\subCamera.cs" />
      <None Include="Assets\NVIDIA\Flex\Resources\Shaders\FlexDrawFluid.shader" />
      <None Include="Assets\NVIDIA\Flex\Resources\Shaders\FlexDrawFluid2.shader" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
