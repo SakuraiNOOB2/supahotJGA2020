@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class gear : MonoBehaviour
 {
+    public float direction;//+:時計回り,-:逆時計回り
+    public GameObject obj_rope;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +15,9 @@ public class gear : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //回転させる
-        transform.Rotate(new Vector3(0, 0, 1));
+        if (obj_rope.GetComponent<rope>().RopeSwithsIsOn())
+        {
+            transform.Rotate(new Vector3(0, 0, direction));
+        }
     }
 }
