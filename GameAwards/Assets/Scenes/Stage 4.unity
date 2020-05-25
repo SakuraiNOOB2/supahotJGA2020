@@ -7752,6 +7752,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5409357171973144550, guid: 442036cf6b5a14c07bf0c9be8642a4b1,
+        type: 3}
+      propertyPath: UnkoText
+      value: 
+      objectReference: {fileID: 2139673543}
     - target: {fileID: 6452471917922287654, guid: 442036cf6b5a14c07bf0c9be8642a4b1,
         type: 3}
       propertyPath: m_LocalPosition.x
