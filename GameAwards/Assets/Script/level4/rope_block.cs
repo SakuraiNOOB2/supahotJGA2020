@@ -5,7 +5,7 @@ using UnityEngine;
 public class rope_block : MonoBehaviour
 {
     bool player_onblock;
-    public Vector3 defaultScale;
+    Vector3 defaultScale;
     // Start is called before the first frame update
     void Start()
     {

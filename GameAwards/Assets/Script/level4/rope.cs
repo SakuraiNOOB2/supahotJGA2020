@@ -4,29 +4,56 @@ using UnityEngine;
 
 public class rope : MonoBehaviour
 {
-    bool switch_on;
+    public int rope_switch;//-1下,1上,0停止
     public GameObject block;
+    public Vector3 length;
+    public Vector3 maxlength;
+    public Vector3 minlength;
     // Start is called before the first frame update
     void Start()
     {
-        switch_on = false;
+        rope_switch = 0;
+        length = transform.localScale;
     }
 
     // Update is called once per frame
     void Update()
     {
-        switch_on = block.GetComponent<rope_block>().PlayerOnBlock();
-        if (switch_on)
+        length = transform.localScale;
+        if (block.GetComponent<rope_block>().PlayerOnBlock())
         {
-            Vector3 scale = transform.localScale;
-            scale.y += 0.01f;
-            transform.localScale = new Vector3(scale.x, scale.y, scale.z);
+            rope_switch = -1;
         }
-        
+
+        if (rope_switch == -1)
+        {
+            
+            if (length.y < maxlength.y)
+            {
+                length.y += 0.01f;
+            }
+            else
+            {
+                rope_switch = 0;
+            }
+        }
+        if (rope_switch == 1)
+        {
+
+            if (length.y > minlength.y)
+            {
+                length.y -= 0.01f;
+            }
+            else
+            {
+                rope_switch = 0;
+            }
+        }
+        transform.localScale = new Vector3(length.x, length.y, length.z);
     }
 
-    public bool RopeSwithsIsOn()
+    public int RopeSwithsIsOn()
     {
-        return switch_on;
+        return rope_switch;
     }
 }

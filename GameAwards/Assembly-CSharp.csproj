@@ -116,6 +116,7 @@
      <Compile Include="Assets\Script\level4\block_move_stage4.cs" />
      <Compile Include="Assets\Script\level4\botton_door_level4.cs" />
      <Compile Include="Assets\Script\level4\gear.cs" />
+     <Compile Include="Assets\Script\level4\pairing.cs" />
      <Compile Include="Assets\Script\level4\rope.cs" />
      <Compile Include="Assets\Script\level4\rope_block.cs" />
      <Compile Include="Assets\Script\messagecollider\messagecollider.cs" />
