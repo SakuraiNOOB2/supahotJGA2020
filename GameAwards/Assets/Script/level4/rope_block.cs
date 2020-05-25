@@ -5,11 +5,13 @@ using UnityEngine;
 public class rope_block : MonoBehaviour
 {
     bool player_onblock;
+    bool concrete_onblock;
     Vector3 defaultScale;
     // Start is called before the first frame update
     void Start()
     {
         player_onblock = false;
+        concrete_onblock = false;
         defaultScale = transform.lossyScale;
     }
 
@@ -28,14 +30,21 @@ public class rope_block : MonoBehaviour
     }
     void OnCollisionStay(Collision other)
     {
-        if (other.gameObject.tag == "Player" || other.gameObject.tag == "concrete")
+        if (other.gameObject.tag == "Player")
         {
             player_onblock = true;
-            Debug.Log("ropedown");
+        }
+        if(other.gameObject.tag == "concrete")
+        {
+            concrete_onblock = true;
         }
     }
     public bool PlayerOnBlock()
     {
         return player_onblock;
+    }
+    public bool ConcreteOnBlock()
+    {
+        return concrete_onblock;
     }
 }

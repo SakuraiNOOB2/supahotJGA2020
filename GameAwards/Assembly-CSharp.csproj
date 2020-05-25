@@ -114,6 +114,8 @@
      <Compile Include="Assets\Script\level3\block_move.cs" />
      <Compile Include="Assets\Script\level3\botton_door.cs" />
      <Compile Include="Assets\Script\level4\block_move_stage4.cs" />
+     <Compile Include="Assets\Script\level4\block_move_stage4_2.cs" />
+     <Compile Include="Assets\Script\level4\block_move_stage4_3.cs" />
      <Compile Include="Assets\Script\level4\botton_door_level4.cs" />
      <Compile Include="Assets\Script\level4\gear.cs" />
      <Compile Include="Assets\Script\level4\pairing.cs" />

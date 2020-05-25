@@ -19,11 +19,11 @@ public class rope : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        length = transform.localScale;
-        if (block.GetComponent<rope_block>().PlayerOnBlock())
+        if (block.GetComponent<rope_block>().PlayerOnBlock()|| block.GetComponent<rope_block>().ConcreteOnBlock())
         {
             rope_switch = -1;
         }
+        length = transform.localScale;
 
         if (rope_switch == -1)
         {
@@ -50,9 +50,12 @@ public class rope : MonoBehaviour
             }
         }
         transform.localScale = new Vector3(length.x, length.y, length.z);
+
     }
 
-    public int RopeSwithsIsOn()
+
+
+public int RopeSwithsIsOn()
     {
         return rope_switch;
     }
