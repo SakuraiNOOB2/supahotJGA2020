@@ -6,11 +6,15 @@ using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
-    private bool Over;
-    private int time;
+    private bool Over;          //死んだかどうか
+    private int time;           //待機時間
 
     [SerializeField]
-    private Text UnkoText;
+    private Text UnkoText;      //ゲームクリアとゲームオーバーのやつ
+
+    [SerializeField]
+    private GameObject UnkoObject;      //コンテニュー
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +41,9 @@ public class GameOver : MonoBehaviour
         }
         if (time >= 300)
         {
-            SceneManager.LoadScene("StageSelect");
+
+            UnkoObject.gameObject.SetActive(true);
+            //SceneManager.LoadScene("StageSelect");
         }
     }
     void OnCollisionEnter(Collision collision)
