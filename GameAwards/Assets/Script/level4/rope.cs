@@ -19,10 +19,7 @@ public class rope : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (block.GetComponent<rope_block>().PlayerOnBlock()|| block.GetComponent<rope_block>().ConcreteOnBlock())
-        {
-            rope_switch = -1;
-        }
+       
         length = transform.localScale;
 
         if (rope_switch == -1)
