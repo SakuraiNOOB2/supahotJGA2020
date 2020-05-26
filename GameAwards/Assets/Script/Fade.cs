@@ -18,8 +18,8 @@ public class Fade : MonoBehaviour
         green = GetComponent<Image>().color.g;
         blue = GetComponent<Image>().color.b;
         alfa = GetComponent<Image>().color.a;
-        FadeStart = false;
-        Mode = 0;
+        //FadeStart = false;
+        //Mode = 0;
     }
     // Update is called once per frame
     void Update()

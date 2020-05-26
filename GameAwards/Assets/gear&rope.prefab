@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 4486838762757826893}
   - component: {fileID: 4486838762757826894}
   - component: {fileID: 4486838762757826895}
-  - component: {fileID: 4486838762757826888}
   m_Layer: 0
   m_Name: Cube (11)
   m_TagString: MoveBlock
@@ -342,18 +341,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0.5, y: 0.5, z: -0.5}
---- !u!114 &4486838762757826888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4486838762757826889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 996895ed564db084495c95e55186200a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4486838762913434491
 GameObject:
   m_ObjectHideFlags: 0
@@ -1387,6 +1374,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rope_switch: 0
   block: {fileID: 4486838762757826889}
+  length: {x: 0, y: 0, z: 0}
   maxlength: {x: 0, y: 6, z: 0}
   minlength: {x: 0, y: 0, z: 0}
-  pair: {fileID: 0}
