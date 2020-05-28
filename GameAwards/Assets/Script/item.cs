@@ -4,14 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 public class item : MonoBehaviour
 {
-    private GameObject Player;
     public GameObject inc; // エディターから取得できるようにpublicにしておく
     public int Num;
     public int type;
     // Start is called before the first frame update
     void Start()
     {
-        Player = GameObject.Find("player");
     }
 
     // Update is called once per frame
