@@ -10,7 +10,11 @@ public class Goal : MonoBehaviour
     private int time;
 
     [SerializeField]
-    private Text UnkoText; 
+    private Text UnkoText;
+
+    [SerializeField]
+    private GameObject ItemControll;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +38,8 @@ public class Goal : MonoBehaviour
 
         if(time >=300)
         {
-            SceneManager.LoadScene("StageSelect");
+            //フェード付きで選択画面に戻る
+            ItemControll.GetComponent<SceneController>().NoButtonClicked();
         }
     }
     void OnCollisionEnter(Collision collision)

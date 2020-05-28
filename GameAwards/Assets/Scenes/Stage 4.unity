@@ -2203,7 +2203,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 3.116e-42, y: 1.04e-43, z: 7.17e-43, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -7988,8 +7988,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
+  near clip plane: 5
+  far clip plane: 20
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -9981,6 +9981,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goal
       objectReference: {fileID: 0}
+    - target: {fileID: 4606927256217152850, guid: efd06c71c4593477fb45f34910e136f3,
+        type: 3}
+      propertyPath: ItemControll
+      value: 
+      objectReference: {fileID: 1262560382}
+    - target: {fileID: 4606927256217152850, guid: efd06c71c4593477fb45f34910e136f3,
+        type: 3}
+      propertyPath: UnkoText
+      value: 
+      objectReference: {fileID: 57079790}
     - target: {fileID: 6503066389038244453, guid: efd06c71c4593477fb45f34910e136f3,
         type: 3}
       propertyPath: m_Mesh
