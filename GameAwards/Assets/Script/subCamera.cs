@@ -14,7 +14,7 @@ public class subCamera : MonoBehaviour
     //ゴール座標格納用
     Vector3 goal_pos;
 
-    public float speed = 1.0f;
+    public float speed = 25.0f;
     private float startTime;
     private float journeyLength;
 
