@@ -115,6 +115,7 @@
     <Compile Include="Assets\Script\TimerScript.cs" />
     <Compile Include="Assets\Script\Title\Title.cs" />
     <Compile Include="Assets\Script\UI_Display.cs" />
+    <Compile Include="Assets\Script\UI_Select.cs" />
     <Compile Include="Assets\Script\camera.cs" />
     <Compile Include="Assets\Script\cursor.cs" />
     <Compile Include="Assets\Script\freez.cs" />
@@ -134,6 +135,7 @@
     <Compile Include="Assets\Script\messagecollider\messagecollider3.cs" />
     <Compile Include="Assets\Script\overlap.cs" />
     <Compile Include="Assets\Script\parabola.cs" />
+    <Compile Include="Assets\Script\particle.cs" />
     <Compile Include="Assets\Script\select.cs" />
     <Compile Include="Assets\Script\subCamera.cs" />
     <None Include="Assets\NVIDIA\Flex\Resources\Shaders\FlexDrawFluid.shader" />

@@ -15,6 +15,9 @@ public class GameOver : MonoBehaviour
     [SerializeField]
     private GameObject UnkoObject;      //コンテニュー
 
+    [SerializeField]
+    private GameObject Particle;      //コンテニュー
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +55,7 @@ public class GameOver : MonoBehaviour
         {
             Over = true;
         }
+        Instantiate(Particle, collision.transform.position, new Quaternion(0,0,0,0)); //パーティクル用ゲームオブジェクト生成
         Destroy(collision.gameObject);
     }
 }
