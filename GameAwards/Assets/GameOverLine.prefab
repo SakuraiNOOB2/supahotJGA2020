@@ -107,3 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf68447c9e2044b5bac3c8c3812bf55e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UnkoText: {fileID: 0}
+  UnkoObject: {fileID: 0}
+  Particle: {fileID: 4390120032256201306, guid: f36313fef661b7146989b81d288c20de,
+    type: 3}

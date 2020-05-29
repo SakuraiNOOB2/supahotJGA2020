@@ -39,6 +39,17 @@ public class rope_block : MonoBehaviour
             concrete_onblock = true;
         }
     }
+    void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            player_onblock = false;
+        }
+        if (other.gameObject.tag == "concrete")
+        {
+            concrete_onblock = false;
+        }
+    }
     public bool PlayerOnBlock()
     {
         return player_onblock;
