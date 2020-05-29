@@ -101,6 +101,7 @@
      <Compile Include="Assets\Script\Player_MoveBlock.cs" />
      <Compile Include="Assets\Script\Rift.cs" />
      <Compile Include="Assets\Script\SceneController.cs" />
+     <Compile Include="Assets\Script\Seesaw.cs" />
      <Compile Include="Assets\Script\Stage_Select.cs" />
      <Compile Include="Assets\Script\Stage_Select_Block.cs" />
      <Compile Include="Assets\Script\TenVin.cs" />
