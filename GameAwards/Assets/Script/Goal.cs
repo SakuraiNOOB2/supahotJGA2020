@@ -6,19 +6,23 @@ using UnityEngine.UI;
 
 public class Goal : MonoBehaviour
 {
-    private bool Clear;
-    private int time;
+    private bool Clear;         //ゴールにたどり着いたか
+    private int time;           //待機時間
 
     [SerializeField]
-    private Text UnkoText;
+    private Text UnkoText;      //Clear文字
 
     [SerializeField]
     private GameObject ItemControll;
+
+    [SerializeField]
+    private GameObject Particle;      //パーティクル
 
     // Start is called before the first frame update
     void Start()
     {
         Clear = false;
+        time = 0;
     }
 
     // Update is called once per frame
@@ -46,6 +50,13 @@ public class Goal : MonoBehaviour
     {
         if (collision.gameObject.name == "ThirdPersonController")
         {
+            if(Clear == false)
+            {
+                Instantiate(Particle,new Vector3(transform.position.x + 5, transform.position.y + 1, transform.position.z + 5), new Quaternion(0, 0, 0, 0)); //パーティクル用ゲームオブジェクト生成
+                Instantiate(Particle, new Vector3(transform.position.x + 5, transform.position.y + 1, transform.position.z - 5), new Quaternion(0, 0, 0, 0)); //パーティクル用ゲームオブジェクト生成
+                Instantiate(Particle, new Vector3(transform.position.x - 5, transform.position.y + 1, transform.position.z + 5), new Quaternion(0, 0, 0, 0)); //パーティクル用ゲームオブジェクト生成
+                Instantiate(Particle, new Vector3(transform.position.x - 5, transform.position.y + 1, transform.position.z - 5), new Quaternion(0, 0, 0, 0)); //パーティクル用ゲームオブジェクト生成
+            }
             Clear = true;
         }
     }

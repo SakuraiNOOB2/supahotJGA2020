@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2385,8 +2385,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.6968244e-19, y: 3.4069375e+12, z: 3.6121556e+12,
-    w: 3268.2053}
+  m_BoundingSphereOverride: {x: 1.8e-43, y: 0, z: 9.1835e-41, w: 5.1134013e-37}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -5404,7 +5403,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-13562
+  m_Name: pb_Mesh-13552
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9748,6 +9747,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9206478938400706021, guid: 6749b9affde81304fb051f64058ef775,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -36.799988
+      objectReference: {fileID: 0}
     - target: {fileID: 9206478938440396640, guid: 6749b9affde81304fb051f64058ef775,
         type: 3}
       propertyPath: m_Name
