@@ -1980,7 +1980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c1baaeb65d6ff4183fe5d56aa8868e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fade: {fileID: 0}
+  Fade: {fileID: 1678319467}
 --- !u!1001 &1308642732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2751,6 +2751,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff065266a12583b4986836c96626dc71, type: 3}
+--- !u!1 &1678319467 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1484318987845324370, guid: ff065266a12583b4986836c96626dc71,
+    type: 3}
+  m_PrefabInstance: {fileID: 1678319466}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1707434236
 Mesh:
   m_ObjectHideFlags: 0
