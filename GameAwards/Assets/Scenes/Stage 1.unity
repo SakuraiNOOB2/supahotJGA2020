@@ -1734,7 +1734,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 5.6e-43, y: NaN, z: 5.62e-43, w: 31153632}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: -10.74147}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -3617,6 +3617,7 @@ MonoBehaviour:
     type: 3}
   water: {fileID: 9175390196173484701, guid: f7204f53983865c4f9cf99230514fa29, type: 3}
   water2: {fileID: 5584396799134364020, guid: 513c769673ffc4c4fb060b60afc1bf13, type: 3}
+  Particle: {fileID: 0}
   muzzle: {fileID: 789021944}
   muzzle2: {fileID: 831343019}
   concrete_speed: 100
@@ -3670,7 +3671,7 @@ PrefabInstance:
     - target: {fileID: 106283748748438855, guid: cb5ab60921f6efc40b6bd153c6ab18b4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 106283748748438855, guid: cb5ab60921f6efc40b6bd153c6ab18b4,
         type: 3}
@@ -3737,6 +3738,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 106283749883265048, guid: cb5ab60921f6efc40b6bd153c6ab18b4,
+        type: 3}
+      propertyPath: UnkoText
+      value: 
+      objectReference: {fileID: 1587088603}
+    - target: {fileID: 106283749883265048, guid: cb5ab60921f6efc40b6bd153c6ab18b4,
+        type: 3}
+      propertyPath: UnkoObject
+      value: 
+      objectReference: {fileID: 1670129752}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5ab60921f6efc40b6bd153c6ab18b4, type: 3}
 --- !u!1 &1781679846
@@ -4630,7 +4641,7 @@ PrefabInstance:
     - target: {fileID: 8659798384445025945, guid: dde833f0f1a6ef446805f799c8bbcc99,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8659798384445025945, guid: dde833f0f1a6ef446805f799c8bbcc99,
         type: 3}

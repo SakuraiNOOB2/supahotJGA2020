@@ -46,7 +46,6 @@ public class GameOver : MonoBehaviour
         {
 
             UnkoObject.gameObject.SetActive(true);
-            //SceneManager.LoadScene("StageSelect");
         }
     }
     void OnCollisionEnter(Collision collision)

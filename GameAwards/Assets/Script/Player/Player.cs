@@ -14,15 +14,13 @@ public class Player : MonoBehaviour
     public GameObject concrete2;
     public GameObject water;
     public GameObject water2;
-
+    public GameObject Particle;
     // 弾丸発射点
     public Transform muzzle, muzzle2;
 
     // 弾丸の速度
     public float concrete_speed = 1000;
-
-    private int count = 0;
-
+    
     //アイテム個数
     private int ItemNum;
     private int ItemNumflat;
@@ -42,7 +40,6 @@ public class Player : MonoBehaviour
     {
         Vector3 force;
 
-        count++;
         //スペースを押したら
         if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("joystick button 1"))
         {
@@ -52,13 +49,10 @@ public class Player : MonoBehaviour
                 case 1:
                     if (ol.GetComponent<overlap>().IsNotOverlap() == true && ItemNum != 0)
                     {
-                        count = 0;
                         ItemNum--;
                         // 弾丸の複製
                         GameObject concretes = Instantiate(concrete) as GameObject;
-
-
-
+                        
                         force = this.gameObject.transform.forward * concrete_speed;
 
                         // Rigidbodyに力を加えて発射
@@ -66,6 +60,11 @@ public class Player : MonoBehaviour
 
                         // 弾丸の位置を調整
                         concretes.transform.position = muzzle.position;
+
+                        //煙発生
+                        GameObject smook = Instantiate(Particle);
+                        smook.transform.rotation = transform.rotation;
+                        smook.transform.position = muzzle.position;
                     }
                     break;
 
@@ -73,7 +72,6 @@ public class Player : MonoBehaviour
                 case 2:
                     if (ItemNumflat !=0)
                     {
-                        count = 0;
                         ItemNumflat--;
                         // 弾丸の複製
                         GameObject concrete2s = Instantiate(concrete2) as GameObject;
@@ -85,6 +83,11 @@ public class Player : MonoBehaviour
 
                         // 弾丸の位置を調整
                         concrete2s.transform.position = muzzle2.position;
+
+                        //煙を発生
+                        GameObject smook = Instantiate(Particle);
+                        smook.transform.rotation = transform.rotation;
+                        smook.transform.position = muzzle.position;
                     }
                     break;
             }

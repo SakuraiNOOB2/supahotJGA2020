@@ -450,6 +450,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c351a2a1f97cf9b4fada4cf8f3026a53, type: 3}
+--- !u!1 &458849226 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4965274709306651748, guid: c351a2a1f97cf9b4fada4cf8f3026a53,
+    type: 3}
+  m_PrefabInstance: {fileID: 458849225}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &596274744
 Mesh:
   m_ObjectHideFlags: 0
@@ -730,6 +736,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 106283749883265048, guid: cb5ab60921f6efc40b6bd153c6ab18b4,
+        type: 3}
+      propertyPath: UnkoText
+      value: 
+      objectReference: {fileID: 744513559}
+    - target: {fileID: 106283749883265048, guid: cb5ab60921f6efc40b6bd153c6ab18b4,
+        type: 3}
+      propertyPath: UnkoObject
+      value: 
+      objectReference: {fileID: 458849226}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5ab60921f6efc40b6bd153c6ab18b4, type: 3}
 --- !u!224 &690551276 stripped
@@ -812,7 +828,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 4.8391076e+30, z: 1.7247627e+25, w: 3878.9658}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: -13.068787}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -2952,6 +2968,7 @@ MonoBehaviour:
     type: 3}
   water: {fileID: 9175390196173484701, guid: f7204f53983865c4f9cf99230514fa29, type: 3}
   water2: {fileID: 5584396799134364020, guid: 513c769673ffc4c4fb060b60afc1bf13, type: 3}
+  Particle: {fileID: 0}
   muzzle: {fileID: 789021944}
   muzzle2: {fileID: 831343019}
   concrete_speed: 100

@@ -1692,7 +1692,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 7.431e-42, y: 1.04e-43, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -2407,6 +2407,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 106283749883265048, guid: cb5ab60921f6efc40b6bd153c6ab18b4,
+        type: 3}
+      propertyPath: UnkoObject
+      value: 
+      objectReference: {fileID: 1658692934}
+    - target: {fileID: 106283749883265048, guid: cb5ab60921f6efc40b6bd153c6ab18b4,
+        type: 3}
+      propertyPath: UnkoText
+      value: 
+      objectReference: {fileID: 1356075054}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5ab60921f6efc40b6bd153c6ab18b4, type: 3}
 --- !u!1 &811112180
@@ -6260,6 +6270,7 @@ MonoBehaviour:
     type: 3}
   water: {fileID: 9175390196173484701, guid: f7204f53983865c4f9cf99230514fa29, type: 3}
   water2: {fileID: 5584396799134364020, guid: 513c769673ffc4c4fb060b60afc1bf13, type: 3}
+  Particle: {fileID: 0}
   muzzle: {fileID: 789021944}
   muzzle2: {fileID: 831343019}
   concrete_speed: 100

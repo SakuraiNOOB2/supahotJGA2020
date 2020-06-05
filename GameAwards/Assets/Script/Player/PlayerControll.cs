@@ -29,13 +29,13 @@ public class PlayerControll : MonoBehaviour
         if (Input.GetKey(KeyCode.A) || dph < -0.5f )
         {
             Rot.y = -90;
-            Pos.x -= 0.05f;
+            Pos.x -= 0.10f;
         }
 
         if (Input.GetKey(KeyCode.D) || dph > 0.5f)
         {
             Rot.y = 90;
-            Pos.x += 0.05f;
+            Pos.x += 0.10f;
         }
 
         if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown("joystick button 0"))
