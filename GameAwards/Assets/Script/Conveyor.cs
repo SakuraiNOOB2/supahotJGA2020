@@ -59,14 +59,33 @@ public class Conveyor : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         var rigidBody = collision.gameObject.GetComponent<Rigidbody>();
-        rigidbodies.Add(rigidBody);
 
+        //コンクリートが触れたとき、X軸の固定のみ外す。
+        if (collision.gameObject.name == "ConcreteBlock(Clone)" || collision.gameObject.name == "Ladder(Clone)")
+        {
+            rigidBody.constraints = RigidbodyConstraints.None;
+
+            rigidBody.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotation;
+
+            
+        }
+
+
+        rigidbodies.Add(rigidBody);
+        
+        
     }
 
     //オブジェクトがベルトコンベアから離れたとき 
     void OnCollisionExit(Collision collision)
     {
         var rigidBody = collision.gameObject.GetComponent<Rigidbody>();
+
+        //コンクリートなら離れるとき、X座標の制限を戻す
+        if (collision.gameObject.name == "ConcreteBlock(Clone)" || collision.gameObject.name == "Ladder(Clone)")
+        {
+            rigidBody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotation;
+        }
         rigidbodies.Remove(rigidBody);
 
     }
