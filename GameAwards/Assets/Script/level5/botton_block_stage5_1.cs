@@ -20,9 +20,13 @@ public class botton_block_stage5_1 : MonoBehaviour
     }
     void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("concrete")&& block.transform.position.y < 8)
+        if (other.CompareTag("concrete")|| other.CompareTag("Player"))
         {
-            block.transform.position += transform.up * 0.1f;
+            if (block.transform.position.y < 8)
+            {
+                block.transform.position += transform.up * 0.1f;
+                Debug.Log("switch_on");
+            }
             
         }
     }

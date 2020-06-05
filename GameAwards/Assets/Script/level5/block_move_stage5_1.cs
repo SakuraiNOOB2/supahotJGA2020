@@ -8,7 +8,7 @@ public class block_move_stage5_1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dir = -1;
+        dir = 1;
     }
 
     // Update is called once per frame
@@ -17,11 +17,11 @@ public class block_move_stage5_1 : MonoBehaviour
         Rigidbody rb = this.GetComponent<Rigidbody>();
         Vector3 now = rb.position;
 
-        if (now.y > 8)
+        if (now.x > 119)
             dir = -1;
-        if (now.y < 0)
+        if (now.x < 95)
             dir = 1;
 
-        transform.Translate(0.0f, 0.03f * dir, 0.0f);
+        transform.Translate(0.03f * dir, 0.0f, 0.0f);
     }
 }
