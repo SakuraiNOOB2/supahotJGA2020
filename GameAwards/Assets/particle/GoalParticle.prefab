@@ -43,7 +43,7 @@ ParticleSystem:
   serializedVersion: 6
   lengthInSec: 2
   simulationSpeed: 1
-  stopAction: 0
+  stopAction: 2
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
@@ -4758,5 +4758,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23c06b7fe574789488fa45e15502d99f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-  Lookrotato: 0
