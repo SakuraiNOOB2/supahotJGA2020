@@ -17,6 +17,13 @@ public class TimerScript : MonoBehaviour {
     //　開始待ち
     [SerializeField]
     private int startwait;
+    [SerializeField]
+    private Text UnkoText;      //ゲームクリアとゲームオーバーのやつ
+
+    [SerializeField]
+    private GameObject UnkoObject;      //コンテニュー
+    private int time;
+
     //　前回Update時の秒数
     private float oldSeconds;
     private Text timerText;
@@ -36,6 +43,7 @@ public class TimerScript : MonoBehaviour {
         totalTime = minute * 60 + seconds;
         oldSeconds = 0f;
         timerText = GetComponentInChildren<Text>();
+        time = 0;
 
         //音楽
         audioSource = gameObject.GetComponent<AudioSource>();
@@ -50,6 +58,26 @@ public class TimerScript : MonoBehaviour {
         {
             flag = true;
             audioSource.PlayOneShot(MainBGM);
+        }
+
+        //時間切れ
+        if (totalTime <= 0f)
+        {
+            float alfa = 1.0f;
+            float red = UnkoText.gameObject.GetComponent<Text>().color.r;
+            float green = UnkoText.gameObject.GetComponent<Text>().color.g;
+            float blue = UnkoText.gameObject.GetComponent<Text>().color.b;
+
+            UnkoText.gameObject.GetComponent<Text>().color = new Color(red, green, blue, alfa);
+
+            Text score_text = UnkoText.GetComponent<Text>();
+            score_text.text = "TIME OVER!!!";
+            time++;
+        }
+        if (time >= 300)
+        {
+
+            UnkoObject.gameObject.SetActive(true);
         }
 
         if (wait < startwait)
@@ -78,10 +106,6 @@ public class TimerScript : MonoBehaviour {
             }
             oldSeconds = seconds;
             //  時間が0になったらシーン移行
-            if (totalTime <= 0f)
-            {
-                SceneManager.LoadScene("finish");
-            }
         }
     }
 }
