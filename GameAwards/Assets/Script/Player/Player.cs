@@ -61,7 +61,10 @@ public class Player : MonoBehaviour
                         // 弾丸の位置を調整
                         concretes.transform.position = muzzle.position;
 
-                        Instantiate(Particle,new Vector3(transform.position.x, transform.position.y, transform.position.z), new Quaternion(0, 0, 0, 0)); //パーティクル用ゲームオブジェクト生成
+                        //煙発生
+                        GameObject smook = Instantiate(Particle);
+                        smook.transform.rotation = transform.rotation;
+                        smook.transform.position = muzzle.position;
                     }
                     break;
 
@@ -81,7 +84,10 @@ public class Player : MonoBehaviour
                         // 弾丸の位置を調整
                         concrete2s.transform.position = muzzle2.position;
 
-                        Instantiate(Particle, new Vector3(transform.position.x, transform.position.y, transform.position.z), new Quaternion(0, 0, 0, 0)); //パーティクル用ゲームオブジェクト生成
+                        //煙を発生
+                        GameObject smook = Instantiate(Particle);
+                        smook.transform.rotation = transform.rotation;
+                        smook.transform.position = muzzle.position;
                     }
                     break;
             }
