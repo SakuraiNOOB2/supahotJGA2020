@@ -99,6 +99,8 @@
      <Compile Include="Assets\Script\level4\pairing.cs" />
      <Compile Include="Assets\Script\level4\rope.cs" />
      <Compile Include="Assets\Script\level4\rope_block.cs" />
+     <Compile Include="Assets\Script\level5\block_move_stage5_1.cs" />
+     <Compile Include="Assets\Script\level5\botton_block_stage5_1.cs" />
      <Compile Include="Assets\Script\messagecollider\messagecollider.cs" />
      <Compile Include="Assets\Script\messagecollider\messagecollider2.cs" />
      <Compile Include="Assets\Script\messagecollider\messagecollider3.cs" />
