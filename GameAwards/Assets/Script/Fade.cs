@@ -54,4 +54,9 @@ public class Fade : MonoBehaviour
     {
         return FadeStart;
     }
+
+    public int GetFade()
+    {
+        return Mode;
+    }
 }
