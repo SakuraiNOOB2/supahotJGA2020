@@ -154,6 +154,7 @@ GameObject:
   - component: {fileID: 9206478938400706021}
   - component: {fileID: 9206478938400706023}
   - component: {fileID: 9206478938400706020}
+  - component: {fileID: 7827296333260312276}
   m_Layer: 5
   m_Name: Cube_count
   m_TagString: Untagged
@@ -221,6 +222,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: x0
+--- !u!114 &7827296333260312276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9206478938400706018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d94108a78c8056c4c94cb603634a441b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Block: {fileID: 0}
+  Type: 1
 --- !u!1 &9206478938403139443
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,6 +595,7 @@ GameObject:
   - component: {fileID: 9206478939298862333}
   - component: {fileID: 9206478939298862335}
   - component: {fileID: 9206478939298862332}
+  - component: {fileID: 6109075224007056677}
   m_Layer: 5
   m_Name: Plane_count
   m_TagString: Untagged
@@ -647,6 +663,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: x0
+--- !u!114 &6109075224007056677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9206478939298862330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d94108a78c8056c4c94cb603634a441b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Block: {fileID: 0}
+  Type: 2
 --- !u!1001 &629532930799740018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -946,6 +976,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6226458989417803796, guid: 5cb2b9258eb04034f86f4936fb465c79,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4414e9f5952889747862808271b5f67d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cb2b9258eb04034f86f4936fb465c79, type: 3}
 --- !u!4 &4610225352978222611 stripped

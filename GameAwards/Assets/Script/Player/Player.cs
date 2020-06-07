@@ -142,6 +142,14 @@ public class Player : MonoBehaviour
     {
         ItemNumflat += Add;
     }
+    public int GetItemNum()
+    {
+        return ItemNum;
+    }
+    public int  GetItemNumFlat()
+    {
+        return ItemNumflat;
+    }
 }
 
 
