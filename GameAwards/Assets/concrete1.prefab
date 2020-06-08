@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c55e740b0d2b0b449841ba5b07dd4a71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FreezTime: 3
+  FreezTime: 1
   target: {fileID: 8466682108673580846, guid: 944735b5a4203724b9178c9486923b23, type: 3}
 --- !u!114 &7224803583243765069
 MonoBehaviour:
