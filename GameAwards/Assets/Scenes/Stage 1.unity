@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1429,7 +1429,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: -10.74147}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 1.7e-44}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -3566,7 +3566,8 @@ MonoBehaviour:
     type: 3}
   water: {fileID: 9175390196173484701, guid: f7204f53983865c4f9cf99230514fa29, type: 3}
   water2: {fileID: 5584396799134364020, guid: 513c769673ffc4c4fb060b60afc1bf13, type: 3}
-  Particle: {fileID: 0}
+  Particle: {fileID: 2689783256237765527, guid: 7a22bcd485d8ad74ea35cc937d03198d,
+    type: 3}
   muzzle: {fileID: 789021944}
   muzzle2: {fileID: 831343019}
   concrete_speed: 100
