@@ -7,6 +7,8 @@ public class cursor : MonoBehaviour
 {
     bool Use;       //使用
     bool Out;       //シーン抜け出すときに使う
+    int Stage;
+    int Time;
     string Name;
     [SerializeField]
     GameObject Fade;
@@ -14,6 +16,8 @@ public class cursor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Stage = 1;
+        Time = 0;
         Out = false;
         Use = false;
         Fade.GetComponent<Fade>().SetMode(2);
@@ -24,14 +28,35 @@ public class cursor : MonoBehaviour
     {
         if (Use==true)
         {
-            float dpv = Input.GetAxis("D_Pad_V");
+            //float dpv = Input.GetAxis("D_Pad_V");
             float dph = Input.GetAxis("D_Pad_H");
             Vector3 Pos = transform.position;
 
-            Pos.x = Pos.x + dph * 5;
-            Pos.y = Pos.y + dpv * 5;
+            Pos.x =  200 + 380 * Stage;
+            //Pos.y = Pos.y + dpv * 5;
+
+            if (dph >= 1.0f && Time >= 30)
+            {
+                Stage++;
+                Time = 0;
+            }
+            if (dph <= -1.0f && Time >= 30)
+            {
+                Stage--;
+                Time = 0;
+            }
+
+            if(Stage>=4)
+            {
+                Stage = 4;
+            }
+            if(Stage<=0)
+            {
+                Stage = 0;
+            }
 
             transform.position = Pos;
+            Time++;
 
             if (Input.GetKeyDown("joystick button 0"))
             {
