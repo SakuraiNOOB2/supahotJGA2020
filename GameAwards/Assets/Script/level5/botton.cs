@@ -18,7 +18,7 @@ public class botton : MonoBehaviour
     }
     void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("concrete") || other.CompareTag("Player"))
+        if (other.CompareTag("concrete"))
         {
             switch_door = true;
 
@@ -26,7 +26,7 @@ public class botton : MonoBehaviour
     }
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("concrete") || other.CompareTag("Player"))
+        if (other.CompareTag("concrete"))
         {
             switch_door = false;
 
