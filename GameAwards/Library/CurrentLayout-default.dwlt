@@ -45,10 +45,10 @@ MonoBehaviour:
     y: 30
     width: 1280
     height: 668
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 678, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 73
+  controlID: 48
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 379
     height: 668
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 74
+  controlID: 49
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 75
+  controlID: 50
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -553,20 +553,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Yu\Documents\GitHub\supahotJGA2020\GameAwards
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 122}
-    m_SelectedIDs: d0ec0000
-    m_LastClickedID: 60624
-    m_ExpandedIDs: 0000000066ec000000ca9a3b
+    scrollPos: {x: 0, y: 95}
+    m_SelectedIDs: 20410000
+    m_LastClickedID: 16672
+    m_ExpandedIDs: 00000000204100008c83000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -594,7 +594,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000066ec0000
+    m_ExpandedIDs: 0000000020410000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -687,7 +687,7 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 505
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -717,23 +717,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d2650100
-      m_LastClickedID: 91602
-      m_ExpandedIDs: a093fbff64c5fbff0cf8fbff34fefbff8c02fcff9c06fcffb808fcffbc0cfcff4411fcff6442fcffae46fcfff677fcffb8a9fcff9cdafcff8c0cfdff6c3dfdff7441fdffd843fdff8e75fdfff478fdffbc7dfdffbe7efdff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 0ce2f3ff8618f4fff2abf4ffb20df5ffb83ef5ff5286f5ffb6f0ffff7ef6ffff52fbffff720f0700225307008c540700cc540700
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Camera
-        m_OriginalName: Camera
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 73638
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -779,9 +779,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.0199986, y: 7.31, z: 7.0639153}
+    m_Target: {x: -18.24, y: 1.5753123, z: -0.0005776882}
     speed: 2
-    m_Value: {x: -2.0199986, y: 7.31, z: 7.0639153}
+    m_Value: {x: -18.24, y: 1.5753123, z: -0.0005776882}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -827,20 +827,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.012149951, y: 0.16038935, z: -0.0019744327, w: -0.9869774}
+    m_Target: {x: -0.21514243, y: 0.1449878, z: -0.032317158, w: -0.96521986}
     speed: 2
-    m_Value: {x: -0.012149949, y: 0.1603893, z: -0.0019744323, w: -0.98697716}
+    m_Value: {x: -0.21514228, y: 0.1449877, z: -0.032317135, w: -0.96521914}
   m_Size:
-    m_Target: 141.66719
+    m_Target: 6.850931
     speed: 2
-    m_Value: 148.3426
+    m_Value: 6.850931
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
     m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_SpeedNormalized: 0.49999997
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
