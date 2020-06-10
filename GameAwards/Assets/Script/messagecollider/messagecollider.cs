@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class messagecollider : MonoBehaviour
 {
-    public Text MessageCollider1Text;
+    public GameObject Message;
     // Start is called before the first frame update
     void Start()
     {
-      
+        Message.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,7 +22,7 @@ public class messagecollider : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("message1 out");
-            MessageCollider1Text.text = null;
+            Message.SetActive(false);
         }
     }
     void OnTriggerStay(Collider other)
@@ -30,7 +30,7 @@ public class messagecollider : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("message1 in");
-            MessageCollider1Text.text = "階段を作ってジャンプしてみよう";
+            Message.SetActive(true);
         }
     }
 
