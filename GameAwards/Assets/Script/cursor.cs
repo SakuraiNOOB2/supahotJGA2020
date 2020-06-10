@@ -28,12 +28,10 @@ public class cursor : MonoBehaviour
     {
         if (Use==true)
         {
-            //float dpv = Input.GetAxis("D_Pad_V");
             float dph = Input.GetAxis("D_Pad_H");
             Vector3 Pos = transform.position;
 
             Pos.x =  200 + 380 * Stage;
-            //Pos.y = Pos.y + dpv * 5;
 
             if (dph >= 1.0f && Time >= 30)
             {
