@@ -42,6 +42,28 @@ public class Goal : MonoBehaviour
 
         if(time >=300)
         {
+            //クリアフラグを建てる(力技)
+            if(SceneManager.GetActiveScene().name == "Stage 1")
+            {   //ステージ1
+                PlayerPrefs.SetInt("Cleard" + 0, 1);
+            }
+            if (SceneManager.GetActiveScene().name == "Stage 2")
+            {   //ステージ2
+                PlayerPrefs.SetInt("Cleard" + 1, 1);
+            }
+            if (SceneManager.GetActiveScene().name == "Stage 3")
+            {   //ステージ3
+                PlayerPrefs.SetInt("Cleard" + 2, 1);
+            }
+            if (SceneManager.GetActiveScene().name == "Stage 4")
+            {   //ステージ4
+                PlayerPrefs.SetInt("Cleard" + 3, 1);
+            }
+            if (SceneManager.GetActiveScene().name == "Stage 5")
+            {   //ステージ5
+                PlayerPrefs.SetInt("Cleard" + 4, 1);
+            }
+
             //フェード付きで選択画面に戻る
             ItemControll.GetComponent<SceneController>().NoButtonClicked();
         }
