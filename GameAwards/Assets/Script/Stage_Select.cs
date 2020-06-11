@@ -21,13 +21,13 @@ public class Stage_Select : MonoBehaviour
 
         for (int i = 0; i < MaxStage; i++)
         {
-            ////データ確認
-            //if (PlayerPrefs.HasKey("Cleard" + i) == false)
-            //{//なければ新しく作る
-            //    PlayerPrefs.SetInt("Cleard" + i, 0);
-            //}
-            ////セーブデータのロード
-            //Cleard[i] = PlayerPrefs.GetInt("Cleard" + i,0);
+            //データ確認
+            if (PlayerPrefs.HasKey("Cleard" + i) == false)
+            {//なければ新しく作る
+                PlayerPrefs.SetInt("Cleard" + i, 0);
+            }
+            //セーブデータのロード
+            Cleard[i] = PlayerPrefs.GetInt("Cleard" + i, 0);
 
         }
 
@@ -37,7 +37,7 @@ public class Stage_Select : MonoBehaviour
             {
                 GameObject Clear = (GameObject)Instantiate(cleartext);
                 Clear.transform.SetParent(canvas.transform, false);
-                Clear.transform.position = new Vector3(-780, -100.0f, 0);
+                Clear.GetComponent<RectTransform>().anchoredPosition = new Vector2(-780 + (i * 390), -100);
             }
         }
     }
