@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 169
+  controlID: 37
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 124
+  controlID: 80
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 98
+  controlID: 81
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -516,20 +516,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Industrial Props/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Industrial Props/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Unity Projects\supahotJGA2020\GameAwards
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 180}
-    m_SelectedIDs: e0570000
-    m_LastClickedID: 22496
-    m_ExpandedIDs: 0000000066570000685700006a5700006c5700006e5700007057000072570000a257000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: ee870000
+    m_LastClickedID: 34798
+    m_ExpandedIDs: 000000009e870000a0870000a2870000a4870000a6870000a8870000aa870000e687000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -557,7 +557,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000066570000685700006a5700006c5700006e5700007057000072570000
+    m_ExpandedIDs: 000000009e870000a0870000a2870000a4870000a6870000a8870000aa870000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -679,10 +679,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
+      scrollPos: {x: 0, y: 1159}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 24b5feff58f5feff4015ffffb260ffffda73ffff30adffff9cc0ffff9cfaffff30880000
+      m_ExpandedIDs: 68e4feffdc54ffff2875ffff4e8effffb8e9ffff5afbffff8cb00000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -742,9 +742,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -18.337019, y: 33.16336, z: -9.891236}
+    m_Target: {x: 48.47899, y: -11.740173, z: 28.645292}
     speed: 2
-    m_Value: {x: -18.337019, y: 33.16336, z: -9.891236}
+    m_Value: {x: 48.47899, y: -11.740173, z: 28.645292}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -790,13 +790,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.3469589, y: 0.0033967625, z: -0.0011840448, w: -0.93793}
+    m_Target: {x: -0.35382438, y: 0.028621962, z: -0.010803753, w: -0.93488103}
     speed: 2
-    m_Value: {x: -0.34834695, y: 0.0033948023, z: -0.0011890766, w: -0.9373588}
+    m_Value: {x: -0.35660425, y: 0.028587556, z: -0.010888884, w: -0.9337546}
   m_Size:
-    m_Target: 5.9201903
+    m_Target: 57.53769
     speed: 2
-    m_Value: 6.2201905
+    m_Value: 52.78687
   m_Ortho:
     m_Target: 0
     speed: 2
