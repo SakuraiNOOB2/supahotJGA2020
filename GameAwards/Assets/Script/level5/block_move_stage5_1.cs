@@ -17,7 +17,7 @@ public class block_move_stage5_1 : MonoBehaviour
         Rigidbody rb = this.GetComponent<Rigidbody>();
         Vector3 now = rb.position;
 
-        if (now.x > 119)
+        if (now.x > 116)
             dir = -1;
         if (now.x < 95)
             dir = 1;

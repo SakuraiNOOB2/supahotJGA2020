@@ -20,9 +20,9 @@ public class block_move : MonoBehaviour
         Rigidbody rb = this.GetComponent<Rigidbody>();
         Vector3 now = rb.position;
 
-        if (now.x < -20)
+        if (now.x < -14)
             dirx = 1;
-        if (now.x > 15)
+        if (now.x > 19)
             dirx = -1;
 
         if (now.y > 0 && movedown)
