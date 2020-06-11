@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerControll : MonoBehaviour
 {
-    Animator _animator;
     float jump;      //ジャンプの強さ
     private Vector3 speed;
     private bool jumpflag;
@@ -14,35 +13,35 @@ public class PlayerControll : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        _animator = GetComponent<Animator>();
-        jumpflag =false;
+	    jumpflag =false;
         breakfrag = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //　pause用
+        if (Mathf.Approximately(Time.timeScale, 0f))
+        {
+            return;
+        }
+
         Transform transform = this.transform;
         Vector3 Pos = transform.position;
         Vector3 Rot = this.gameObject.transform.localEulerAngles;
         speed = rb.velocity;
         float dph = Input.GetAxis("D_Pad_H");
 
-        _animator.SetBool("isRun", false);
-
         if (Input.GetKey(KeyCode.A) || dph < -0.5f )
         {
             Rot.y = -90;
             Pos.x -= 0.10f;
-            _animator.SetBool("isRun", true);
-
         }
 
         if (Input.GetKey(KeyCode.D) || dph > 0.5f)
         {
             Rot.y = 90;
             Pos.x += 0.10f;
-            _animator.SetBool("isRun", true);
         }
 
         if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown("joystick button 0"))
