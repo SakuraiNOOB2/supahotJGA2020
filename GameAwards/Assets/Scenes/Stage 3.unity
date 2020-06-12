@@ -3651,8 +3651,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inc: {fileID: 1262560382}
-  Num: 0
-  type: 0
+  Num: 2
+  type: 1
 --- !u!135 &1131622639
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6945,6 +6945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ade8dc9cd517c674d96a9f7a8970f55b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 3
 --- !u!54 &1936834517
 Rigidbody:
   m_ObjectHideFlags: 0
