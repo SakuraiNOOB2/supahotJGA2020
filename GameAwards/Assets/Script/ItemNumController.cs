@@ -7,7 +7,6 @@ public class ItemNumController : MonoBehaviour
 {
     public int ItemNum;
     int Mode;
-    public Text ItemText;
 
     public void AddItemNum(int i)
     {
@@ -49,7 +48,5 @@ public class ItemNumController : MonoBehaviour
             }
 
         }
-
-        ItemText.text = "MODE:" + Mode.ToString();
     }
 }

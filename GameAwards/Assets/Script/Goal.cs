@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Goal : MonoBehaviour
 {
     private bool Clear;         //ゴールにたどり着いたか
+    private bool koolfade;
     private int time;           //待機時間
 
     [SerializeField]
@@ -18,9 +19,13 @@ public class Goal : MonoBehaviour
     [SerializeField]
     private GameObject Particle;      //パーティクル
 
+    [SerializeField]
+    private GameObject Fade;
+
     // Start is called before the first frame update
     void Start()
     {
+        koolfade = false;
         Clear = false;
         time = 0;
     }
@@ -28,7 +33,7 @@ public class Goal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Clear==true)
+        if (Clear == true)
         {
             float alfa = 1.0f;
             float red = UnkoText.gameObject.GetComponent<Text>().color.r;
@@ -40,10 +45,10 @@ public class Goal : MonoBehaviour
             time++;
         }
 
-        if(time >=300)
+        if (time >= 300)
         {
             //クリアフラグを建てる(力技)
-            if(SceneManager.GetActiveScene().name == "Stage 1")
+            if (SceneManager.GetActiveScene().name == "Stage 1")
             {   //ステージ1
                 PlayerPrefs.SetInt("Cleard" + 0, 1);
             }
@@ -63,11 +68,20 @@ public class Goal : MonoBehaviour
             {   //ステージ5
                 PlayerPrefs.SetInt("Cleard" + 4, 1);
             }
-
             //フェード付きで選択画面に戻る
-            ItemControll.GetComponent<SceneController>().NoButtonClicked();
+            if (koolfade == false)
+            {
+                Fade.GetComponent<Fade>().SetMode(1);
+                koolfade = true;
+            }
+            if (Fade.GetComponent<Fade>().GetFadeStart() == false)
+            {//押されたボタンで変える
+                SceneManager.LoadScene("StageSelect");
+            }
         }
+
     }
+
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "ThirdPersonController")

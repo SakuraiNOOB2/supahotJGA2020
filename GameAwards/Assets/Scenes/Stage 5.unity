@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10188,7 +10188,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 1.3629e-41, w: 5.9e-44}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -18223,7 +18223,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemNum: 0
-  ItemText: {fileID: 0}
 --- !u!4 &1262560384
 Transform:
   m_ObjectHideFlags: 0
@@ -28771,6 +28770,11 @@ PrefabInstance:
       propertyPath: UnkoText
       value: 
       objectReference: {fileID: 663144060}
+    - target: {fileID: 4606927256217152850, guid: efd06c71c4593477fb45f34910e136f3,
+        type: 3}
+      propertyPath: Fade
+      value: 
+      objectReference: {fileID: 2102608600}
     - target: {fileID: 6503066389038244453, guid: efd06c71c4593477fb45f34910e136f3,
         type: 3}
       propertyPath: m_Mesh

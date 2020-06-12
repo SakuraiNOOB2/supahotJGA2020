@@ -1552,7 +1552,8 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 3.1259e-41, y: 1.04e-43, z: 0.031496055, w: 0}
+  m_BoundingSphereOverride: {x: 3.3978173e+21, y: 5.076076e+31, z: 0.00087524165,
+    w: 7.8023184e-31}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -3069,7 +3070,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemNum: 0
-  ItemText: {fileID: 0}
 --- !u!4 &1262560384
 Transform:
   m_ObjectHideFlags: 0
@@ -5157,6 +5157,11 @@ PrefabInstance:
       propertyPath: ItemControll
       value: 
       objectReference: {fileID: 1262560382}
+    - target: {fileID: 4606927256217152850, guid: efd06c71c4593477fb45f34910e136f3,
+        type: 3}
+      propertyPath: Fade
+      value: 
+      objectReference: {fileID: 1678319467}
     - target: {fileID: 6503066389038244453, guid: efd06c71c4593477fb45f34910e136f3,
         type: 3}
       propertyPath: m_Mesh
