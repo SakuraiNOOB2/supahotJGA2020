@@ -37,11 +37,15 @@ public class ItemNumController : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown("joystick button 2"))
         {
-            if(!(ItemNum == 0))
+            if (!(ItemNum == 0))
             {
                 Mode++;
-                if (Mode > ItemNum)
+                if (Mode > 2)
+                {
                     Mode = 1;
+
+                }
+                
             }
 
         }

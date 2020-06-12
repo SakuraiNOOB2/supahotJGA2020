@@ -6093,7 +6093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inc: {fileID: 1262560382}
-  Num: 10
+  Num: 15
   type: 1
 --- !u!135 &1131622639
 SphereCollider:
@@ -8480,11 +8480,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1715161734590247412, guid: 6749b9affde81304fb051f64058ef775,
+        type: 3}
+      propertyPath: Block
+      value: 
+      objectReference: {fileID: 1810661616}
     - target: {fileID: 6109075224007056677, guid: 6749b9affde81304fb051f64058ef775,
         type: 3}
       propertyPath: Block
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1810661616}
     - target: {fileID: 7827296333260312276, guid: 6749b9affde81304fb051f64058ef775,
         type: 3}
       propertyPath: Block
