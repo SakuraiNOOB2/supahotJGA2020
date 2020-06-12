@@ -26,7 +26,7 @@ public class UI_Select : MonoBehaviour
                 UI_Concrete.SetActive(true);
                 UI_Concrete2.SetActive(false);
 
-                if (Input.GetKeyDown(KeyCode.C))
+                if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown("joystick button 2"))
                 {
                     flag++;
                 }
@@ -38,7 +38,7 @@ public class UI_Select : MonoBehaviour
                 UI_Concrete.SetActive(false);
                 UI_Concrete2.SetActive(true);
 
-                if (Input.GetKeyDown(KeyCode.C))
+                if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown("joystick button 2"))
                 {
                     flag--;
                 }

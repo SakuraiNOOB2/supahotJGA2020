@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class block_move : MonoBehaviour
 {
-    int dirx,diry;
+
+    public int speed;
+    int dirx, diry;
+
     bool movedown;
     // Start is called before the first frame update
     void Start()
     {
-        dirx = 1;
-        diry = 1;
+        dirx = 5;
+        diry = 5;
         movedown = false;
     }
 
@@ -21,9 +24,9 @@ public class block_move : MonoBehaviour
         Vector3 now = rb.position;
 
         if (now.x < -14)
-            dirx = 1;
+            dirx = speed;
         if (now.x > 19)
-            dirx = -1;
+            dirx = -speed;
 
         if (now.y > 0 && movedown)
             diry = -1;

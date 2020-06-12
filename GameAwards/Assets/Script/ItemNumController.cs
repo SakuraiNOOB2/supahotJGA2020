@@ -29,7 +29,7 @@ public class ItemNumController : MonoBehaviour
     void Start()
     {
         ItemNum = 0;
-        Mode = 0;
+        Mode = 1;
     }
 
     // Update is called once per frame
