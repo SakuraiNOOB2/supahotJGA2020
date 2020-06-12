@@ -114,6 +114,7 @@
      <Compile Include="Assets\Script\particle.cs" />
      <Compile Include="Assets\Script\select.cs" />
      <Compile Include="Assets\Script\subCamera.cs" />
+     <Compile Include="Assets\Script\viewCamera.cs" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
      <None Include="Assets\Material\NewSurfaceShader.shader" />
      <None Include="Assets\Industrial Props\ReadMe.txt" />
