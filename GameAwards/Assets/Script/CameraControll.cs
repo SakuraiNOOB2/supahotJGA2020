@@ -44,7 +44,7 @@ public class CameraControll : MonoBehaviour
         subCameraSet = sc.GetsubCameraIsOn();
 
         //ボタンが押されたらviewCameraを切り替える
-        if(Input.GetKeyDown(KeyCode.Y))
+        if(Input.GetKeyDown(KeyCode.Y) || Input.GetKeyDown("joystick button 3"))
         {
             viewCameraIsOn = !viewCameraIsOn;
         }
