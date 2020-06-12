@@ -48,6 +48,7 @@ public class Fade : MonoBehaviour
     {
         Mode = SetMode;
         FadeStart = true;
+        transform.SetAsLastSibling();
     }
 
     public bool GetFadeStart()

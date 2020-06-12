@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Goal : MonoBehaviour
 {
     private bool Clear;         //ゴールにたどり着いたか
+    private bool koolfade;
     private int time;           //待機時間
 
     [SerializeField]
@@ -18,10 +19,13 @@ public class Goal : MonoBehaviour
     [SerializeField]
     private GameObject Particle;      //パーティクル
 
+    [SerializeField]
+    private GameObject Fade;
     // Start is called before the first frame update
     void Start()
     {
         Clear = false;
+        koolfade = false;
         time = 0;
     }
 
@@ -64,8 +68,15 @@ public class Goal : MonoBehaviour
                 PlayerPrefs.SetInt("Cleard" + 4, 1);
             }
 
-            //フェード付きで選択画面に戻る
-            ItemControll.GetComponent<SceneController>().NoButtonClicked();
+            if (koolfade == false)
+            {
+                Fade.GetComponent<Fade>().SetMode(1);
+                koolfade = true;
+            }
+            if (Fade.GetComponent<Fade>().GetFadeStart() == false)
+            {
+                SceneManager.LoadScene("StageSelect");
+            }
         }
     }
     void OnCollisionEnter(Collision collision)
