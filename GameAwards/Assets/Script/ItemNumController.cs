@@ -35,21 +35,33 @@ public class ItemNumController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown("joystick button 2"))
+        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown("joystick button 2"))
         {
-            if (!(ItemNum == 0))
-            {
-                Mode++;
-                if (Mode > 2)
-                {
-                    Mode = 1;
+            //if (!(ItemNum == 0))
+            //{
+            //    Mode++;
+            //    if (Mode > 2)
+            //    {
+            //        Mode = 1;
 
-                }
-                
+            //    }
+
+            //}
+
+            Debug.Log("Selection Change");
+
+            Mode++;
+            if (Mode >= 3)
+            {
+                Debug.Log("Selection Change to 1");
+
+                Mode = 1;
+
             }
+
 
         }
 
-        ItemText.text = "MODE:" + Mode.ToString();
+        //ItemText.text = "MODE:" + Mode.ToString();
     }
 }

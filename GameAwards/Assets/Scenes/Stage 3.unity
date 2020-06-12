@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2641,7 +2641,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1544d919c87fce048b5748da7f6c7779, type: 2}
+  - {fileID: 2100000, guid: 06e8405e4f2f23c4a8477b1ac6861a6a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2678,7 +2678,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811112180}
   m_LocalRotation: {x: 0, y: -0.70710677, z: 0.70710677, w: 0}
-  m_LocalPosition: {x: 31.9, y: 5.9, z: 25}
+  m_LocalPosition: {x: 31.9, y: 30.9, z: 25}
   m_LocalScale: {x: 25, y: 1, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3651,7 +3651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inc: {fileID: 1262560382}
-  Num: 2
+  Num: 3
   type: 1
 --- !u!135 &1131622639
 SphereCollider:
@@ -4444,7 +4444,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-72554
+  m_Name: pb_Mesh-985306
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6475,6 +6475,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798274591044091075, guid: 557c291f53da1bf43adc1b2a1a5deb7d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.503
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 557c291f53da1bf43adc1b2a1a5deb7d, type: 3}
