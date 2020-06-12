@@ -24,8 +24,22 @@ public class Rift : MonoBehaviour
         collision.gameObject.transform.parent = this.gameObject.transform;
     }
 
+    private void OnCollisionStay(Collision collision)
+    {
+        Vector3 Rot = collision.gameObject.transform.localEulerAngles;
+        Rot.x = 0;
+        Rot.z = 0;
+        collision.transform.eulerAngles = Rot;
+
+        
+    }
+
     void OnCollisionExit(Collision collision)
     {
+        Vector3 Rot = collision.gameObject.transform.localEulerAngles;
+        Rot.x = 0;
+        Rot.z = 0;
+        collision.transform.eulerAngles = Rot;
         collision.transform.parent = null;
     }
 }
