@@ -9,11 +9,13 @@ public class PlayerControll : MonoBehaviour
     private bool jumpflag;
     private bool breakfrag;
     public Rigidbody rb;
+    Animator _animator;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-	    jumpflag =false;
+        _animator = GetComponent<Animator>();
+        jumpflag =false;
         breakfrag = false;
     }
 
@@ -31,17 +33,20 @@ public class PlayerControll : MonoBehaviour
         Vector3 Rot = this.gameObject.transform.localEulerAngles;
         speed = rb.velocity;
         float dph = Input.GetAxis("D_Pad_H");
+        _animator.SetBool("isRun", false);
 
         if (Input.GetKey(KeyCode.A) || dph < -0.5f )
         {
             Rot.y = -90;
             Pos.x -= 0.10f;
+            _animator.SetBool("isRun", true);
         }
 
         if (Input.GetKey(KeyCode.D) || dph > 0.5f)
         {
             Rot.y = 90;
             Pos.x += 0.10f;
+            _animator.SetBool("isRun", true);
         }
 
         if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown("joystick button 0"))
@@ -64,6 +69,11 @@ public class PlayerControll : MonoBehaviour
         }
         transform.position = Pos;
         transform.eulerAngles = Rot;
+
+        if(jumpflag == true)
+        {
+            _animator.SetBool("isRun", false);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
