@@ -16,12 +16,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 42
-    width: 1920
-    height: 998
+    width: 1280
+    height: 718
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -43,12 +43,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1920
-    height: 948
-  m_MinSize: {x: 678, y: 492}
+    width: 1280
+    height: 668
+  m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 82
+  controlID: 16
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,10 +64,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1351
+    x: 901
     y: 0
-    width: 569
-    height: 948
+    width: 379
+    height: 668
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
@@ -92,10 +92,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 431
-    height: 545
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 287
+    height: 384
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -117,9 +117,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 545
-    width: 1351
-    height: 403
+    y: 384
+    width: 901
+    height: 284
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 14}
@@ -148,9 +148,9 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
-    height: 998
-  m_MinSize: {x: 875, y: 542}
+    width: 1280
+    height: 718
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -169,7 +169,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 1280
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -190,8 +190,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 978
-    width: 1920
+    y: 698
+    width: 1280
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -214,12 +214,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1351
-    height: 948
-  m_MinSize: {x: 402, y: 492}
+    width: 901
+    height: 668
+  m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 37
+  controlID: 17
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -239,12 +239,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1351
-    height: 545
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+    width: 901
+    height: 384
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 167
+  controlID: 18
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -260,10 +260,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 431
+    x: 287
     y: 0
-    width: 920
-    height: 545
+    width: 614
+    height: 384
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
@@ -436,8 +436,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -960
     m_HBaseRangeMax: 960
-    m_VBaseRangeMin: -540
-    m_VBaseRangeMax: 540
+    m_VBaseRangeMin: -600
+    m_VBaseRangeMax: 600
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -454,23 +454,23 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 21
+      y: 0
       width: 918
-      height: 503
-    m_Scale: {x: 0.46574074, y: 0.46574074}
-    m_Translation: {x: 459, y: 251.5}
+      height: 524
+    m_Scale: {x: 0.43666667, y: 0.43666667}
+    m_Translation: {x: 459, y: 262}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -985.52686
-      y: -540
-      width: 1971.0537
-      height: 1080
+      x: -1051.145
+      y: -600
+      width: 2102.29
+      height: 1200
     m_MinimalGUI: 1
-  m_defaultScale: 0.46574074
+  m_defaultScale: 0.43666667
   m_LastWindowPixelSize: {x: 918, y: 524}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -499,9 +499,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 617
-    width: 1350
-    height: 382
+    y: 456
+    width: 900
+    height: 263
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -516,20 +516,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Unity Projects\supahotJGA2020\GameAwards
+  m_LastProjectPath: C:\Users\Yu\Documents\GitHub\supahotJGA2020\GameAwards
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 7a570000
-    m_LastClickedID: 22394
-    m_ExpandedIDs: 000000007a5700007c57000000ca9a3b
+    scrollPos: {x: 0, y: 93}
+    m_SelectedIDs: 96c10100
+    m_LastClickedID: 115094
+    m_ExpandedIDs: 0000000056c1010058c1010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -557,7 +557,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007a5700007c570000
+    m_ExpandedIDs: 0000000056c1010058c10100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -634,10 +634,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1351
+    x: 901
     y: 72
-    width: 568
-    height: 927
+    width: 378
+    height: 647
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -674,15 +674,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 72
-    width: 430
-    height: 524
+    width: 286
+    height: 363
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 083d0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d822f4fff022f4ff4e24f4ff1886f4ffb405f5ff9025f5fff05ef5ff605ff5ff6e5ff5ff7a5ff5ffcc68f5ffe468f5ffee68f5ffb0caf5ff4a4af6ff266af6ff80a3f6ffeaa3f6fff4a3f6fffea3f6ff46a7f6ff5ea7f6ff68a7f6ff2a09f7ffc488f7ffa0a8f7fffae1f7ff64e2f7ff6ee2f7ff78e2f7fff2e3f7ff0ae4f7ff68e5f7ff3247f8ffcec6f8ffaae6f8ff0a20f9ff7a20f9ff8820f9ff9420f9ff1427f9ff2c27f9ff8a28f9ff548af9fff009faffcc29faff2c63faff9c63faffaa63faffb663faff1469faff2c69faff8a6afaff54ccfafff04bfbffcc6bfbff2ca5fbff9ca5fbffaaa5fbffb6a5fbff82a8fbff9aa8fbfff8a9fbffc20bfcff5e8bfcff3aabfcff9ae4fcff0ae5fcff18e5fcff24e5fcff84edfcff9cedfcfffaeefcffc450fdff60d0fdff3cf0fdff9c29feff0c2afeff1a2afeff262afeffa230feffba30feff1832feffe293feff7e13ffff5a33ffffba6cffff2a6dffff386dffff446dffff42c0ffff72fafffff22c0100644e0100e67002005e7a02007a3606007a930700b01c090028260900b0020a00
+      m_ExpandedIDs: 4ac0f7ff62c0f7ffc80af8ff8a6cf8ff966cf8ff728cf8ffccc5f8ff36c6f8ff40c6f8ff4ac6f8fff8c6f8ff10c7f8ff4c12f9ff1a74f9ff2674f9ff0294f9ff5ecdf9ffcccdf9ffdacdf9ffe6cdf9ffaccef9ff264efaff4060fafff487faff6a88faff36a8faffd0e1faff2602fbff264dfbff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -727,10 +727,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 431
+    x: 287
     y: 72
-    width: 918
-    height: 524
+    width: 612
+    height: 363
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
@@ -792,7 +792,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.18527335, y: 0.24134769, z: -0.047036547, w: -0.9515634}
     speed: 2
-    m_Value: {x: -0.18524924, y: 0.24131627, z: -0.047030427, w: -0.95143956}
+    m_Value: {x: -0.18527335, y: 0.24134769, z: -0.047036547, w: -0.9515635}
   m_Size:
     m_Target: 2.8578837
     speed: 2
