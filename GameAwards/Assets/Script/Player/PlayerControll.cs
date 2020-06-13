@@ -38,14 +38,14 @@ public class PlayerControll : MonoBehaviour
         if (Input.GetKey(KeyCode.A) || dph < -0.5f )
         {
             Rot.y = -90;
-            Pos.x -= 0.10f;
+            Pos.x -= 0.05f;
             _animator.SetBool("isRun", true);
         }
 
         if (Input.GetKey(KeyCode.D) || dph > 0.5f)
         {
             Rot.y = 90;
-            Pos.x += 0.10f;
+            Pos.x += 0.05f;
             _animator.SetBool("isRun", true);
         }
 
