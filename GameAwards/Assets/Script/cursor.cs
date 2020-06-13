@@ -28,7 +28,7 @@ public class cursor : MonoBehaviour
     {
         if (Use==true)
         {
-            float dph = Input.GetAxis("D_Pad_H");
+            float dph = Input.GetAxis("Horizontal");
             Vector3 Pos = transform.position;
 
             Pos.x =  200 + 380 * Stage;

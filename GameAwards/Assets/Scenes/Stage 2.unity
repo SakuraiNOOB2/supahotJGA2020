@@ -929,6 +929,12 @@ PrefabInstance:
       objectReference: {fileID: 1850514874}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: affcefad75bb6c8449b9ceabf8243295, type: 3}
+--- !u!1 &572222283 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1471935645478226105, guid: affcefad75bb6c8449b9ceabf8243295,
+    type: 3}
+  m_PrefabInstance: {fileID: 572222282}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &574452426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1552,7 +1558,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 3.525e-41, y: 1.04e-43, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.5638e-41, y: 1.04e-43, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -4529,6 +4535,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 246704122667176667, guid: 3f557ebda60fd4b41b770ec6f3b3c6fa,
+        type: 3}
+      propertyPath: maincamera
+      value: 
+      objectReference: {fileID: 1858161713}
+    - target: {fileID: 246704122667176667, guid: 3f557ebda60fd4b41b770ec6f3b3c6fa,
+        type: 3}
+      propertyPath: subcamera
+      value: 
+      objectReference: {fileID: 572222283}
     - target: {fileID: 1688308487487222669, guid: 3f557ebda60fd4b41b770ec6f3b3c6fa,
         type: 3}
       propertyPath: m_Name

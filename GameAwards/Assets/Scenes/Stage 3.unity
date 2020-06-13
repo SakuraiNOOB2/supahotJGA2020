@@ -930,6 +930,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 246704122667176667, guid: 3f557ebda60fd4b41b770ec6f3b3c6fa,
+        type: 3}
+      propertyPath: subcamera
+      value: 
+      objectReference: {fileID: 1831957380}
+    - target: {fileID: 246704122667176667, guid: 3f557ebda60fd4b41b770ec6f3b3c6fa,
+        type: 3}
+      propertyPath: maincamera
+      value: 
+      objectReference: {fileID: 1858161713}
     - target: {fileID: 1688308487487222669, guid: 3f557ebda60fd4b41b770ec6f3b3c6fa,
         type: 3}
       propertyPath: m_Name
@@ -2137,7 +2147,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 5.0957e-41, y: 1.04e-43, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: -14.897461, z: 6.01e-43, w: -13.806381}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -4262,6 +4272,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: viewCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 1471935645478226105, guid: affcefad75bb6c8449b9ceabf8243295,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1471935645478226106, guid: affcefad75bb6c8449b9ceabf8243295,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4444,7 +4459,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-364170
+  m_Name: pb_Mesh-329504
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6483,6 +6498,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 557c291f53da1bf43adc1b2a1a5deb7d, type: 3}
+--- !u!1 &1831957380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1471935645478226105, guid: affcefad75bb6c8449b9ceabf8243295,
+    type: 3}
+  m_PrefabInstance: {fileID: 1279913686}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1832741496
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7853,7 +7874,7 @@ PrefabInstance:
     - target: {fileID: 6452471917922287654, guid: 442036cf6b5a14c07bf0c9be8642a4b1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.5
+      value: 5.7
       objectReference: {fileID: 0}
     - target: {fileID: 6452471917922287654, guid: 442036cf6b5a14c07bf0c9be8642a4b1,
         type: 3}

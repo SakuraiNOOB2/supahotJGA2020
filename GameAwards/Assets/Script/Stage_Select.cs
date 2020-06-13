@@ -10,13 +10,17 @@ public class Stage_Select : MonoBehaviour
     private GameObject cleartext;   //クリアのテキスト
     [SerializeField]
     GameObject canvas;             //ステージ選択画面のキャンバス
+    [SerializeField]
+    GameObject Delete;
 
     private int []Cleard;        //ステージをクリアしているかどうか識別する(1=true,0=false)
     private int MaxStage = 5;     //ステージ数
-
+    private int DeleteKey;
     // Start is called before the first frame update
     void Start()
     {
+        DeleteKey = 0;
+        Delete.SetActive(false);
         Cleard = new int[MaxStage];   //配列を用意する(ステージが5つあるので5つ)
 
         for (int i = 0; i < MaxStage; i++)
@@ -56,6 +60,17 @@ public class Stage_Select : MonoBehaviour
                 SceneManager.LoadScene(hit.collider.gameObject.name);
             }
         }
-        
+        if (Input.GetKeyDown("joystick button 3"))
+        {
+            DeleteKey++;
+        }
+
+        if(DeleteKey>=3)
+        {
+            PlayerPrefs.DeleteAll();
+            DeleteKey = 0;
+            Debug.Log("データ全削除された");
+            Delete.SetActive(true);
+        }
     }
 }

@@ -92,46 +92,6 @@ public class Player : MonoBehaviour
                     break;
             }
         }
-
-        //スペースを押したら
-        //if (Input.GetKeyDown(KeyCode.Z) && (inc.GetComponent<ItemNumController>().GetMode() == 1 || inc.GetComponent<ItemNumController>().GetMode() == 2))
-        //{
-
-        //    count = 0;
-        //    // 弾丸の複製
-        //    GameObject waters = Instantiate(water) as GameObject;
-
-        //    Vector3 force;
-
-        //    force = this.gameObject.transform.right * concrete_speed;
-
-        //    // Rigidbodyに力を加えて発射
-        //    //waters.GetComponent<Rigidbody>().AddForce(force);
-
-        //    // 弾丸の位置を調整
-        //    waters.transform.position = muzzle.position;
-
-
-        //}
-        //if (Input.GetKeyDown(KeyCode.Z) && (inc.GetComponent<ItemNumController>().GetMode() == 1 || inc.GetComponent<ItemNumController>().GetMode() == 2))
-        //{
-
-        //    count = 0;
-        //    // 弾丸の複製
-        //    GameObject water2s = Instantiate(water2) as GameObject;
-
-        //    Vector3 force;
-
-        //    force = this.gameObject.transform.right * concrete_speed;
-
-        //    // Rigidbodyに力を加えて発射
-        //    water2s.GetComponent<Rigidbody>().AddForce(force);
-
-        //    // 弾丸の位置を調整
-        //    water2s.transform.position = muzzle.position;
-
-
-        //}
     }
 
     public void AddItem(int Add)
