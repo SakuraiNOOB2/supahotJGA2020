@@ -9,6 +9,8 @@ public class ItemNumController : MonoBehaviour
     int Mode;
     public Text ItemText;
 
+    int conNum1, conNum2;
+
     public void AddItemNum(int i)
     {
         ItemNum += i;
@@ -30,6 +32,7 @@ public class ItemNumController : MonoBehaviour
     {
         ItemNum = 0;
         Mode = 1;
+        
     }
 
     // Update is called once per frame
@@ -48,16 +51,35 @@ public class ItemNumController : MonoBehaviour
 
             //}
 
-            Debug.Log("Selection Change");
+            //Debug.Log("Selection Change");
 
-            Mode++;
-            if (Mode >= 3)
+            //Mode++;
+            //if (Mode >= 3)
+            //{
+            //    Debug.Log("Selection Change to 1");
+
+            //    Mode = 1;
+
+            //}
+            
+
+            switch (Mode)
             {
-                Debug.Log("Selection Change to 1");
+                case 1:
+                    
+                    Mode = 2;
+                    
+                    break;
 
-                Mode = 1;
+                case 2:
 
+                    Mode = 1;
+                    
+                    break;
             }
+
+
+
 
 
         }
